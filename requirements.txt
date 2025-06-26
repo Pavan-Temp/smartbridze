@@ -1,0 +1,11 @@
+flask
+flask-cors
+transformers
+torch
+accelerate
+huggingface_hub
+pandas
+numpy
+scikit-learn
+requests
+pyngrok
