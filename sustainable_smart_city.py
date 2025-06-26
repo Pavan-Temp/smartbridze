@@ -356,6 +356,7 @@ assistant = None
 def initialize_assistant():
     """Initialize the assistant with Hugging Face token"""
     global assistant
+    HF_TOKEN = os.getenv("HF_TOKEN")
     assistant = SmartCityAssistant(HF_TOKEN)
 
 # API Routes
@@ -455,6 +456,7 @@ def start_server():
 
     # Set ngrok authtoken (REQUIRED)
     # REPLACE WITH YOUR ACTUAL NGROK AUTHTOKEN
+    NGROK_TOKEN = os.getenv("NGROK_TOKEN")
     ngrok.set_auth_token(NGROK_TOKEN)
 
     # Start ngrok tunnel
